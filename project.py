@@ -14,7 +14,7 @@ def main():
 
     # Commend-line arguments
     parser = argparse.ArgumentParser(description='This is a game called "King of Diamonds" from "Alice in Borderland" TV Series. You should input a number of players in command-line arguments then read the rules and type the name of each player.')
-    parser.add_argument("-p", "--players", dest='N', default=4, help="number of players (5 players is the minmum and the defult)", type=int)
+    parser.add_argument("-p", "--players", dest='N', default=5, help="number of players (5 players is the minmum and the defult)", type=int)
     ARGS = parser.parse_args()
     if ARGS.N < 5:
         sys.exit("Minumum number of players is 5")
