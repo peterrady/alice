@@ -21,7 +21,7 @@ def main():
 
     # Take players' names
     cowsay.cow("Welcome Players")
-    print("Rules\n\n- All players select a number between 0 and 100 in the given time.\n- The average of the values will be multiplied by 4/5ths (0.8).\n- The person who chooses the number closest to the calculated number wins. This constitutes one round.\n- All losers will lose a point.\n- New rule will be introduced when 4 players remaining, 3 players remaining and 2 players remaining.\n\nGame Clear: Be the last person remaining.\n\nGame Over: Reach -10 points.\n")
+    print("Rules\n\n- All players select a number between 0 and 100.\n- The average of the values will be multiplied by 4/5ths (0.8).\n- The person who chooses the number closest to the calculated number wins. This constitutes one round.\n- All losers will lose a point.\n- New rule will be introduced when 4 players remaining, 3 players remaining and 2 players remaining.\n\nGame Clear: Be the last person remaining.\n\nGame Over: Reach -10 points.\n")
     for n in range(ARGS.N):
         players.append(input(f"Name of player {n + 1}: "))
         scores[players[n]] = 0
